@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Figure Coaching",
+    "description": "A Figure Coaching segít felnőtteknek tisztább irányt, nyugodt magabiztosságot és lendületet találni Gestalt, műkorcsolya és vizualizáció ihlette coaching segítségével."
+  },
+  "nav": {
+    "brand": "Figure Coaching",
+    "toggleText": "Menü",
+    "toggleLabel": "Navigáció megnyitása",
+    "links": {
+      "home": "Kezdőlap",
+      "credo": "Hitvallás",
+      "me": "Rólam",
+      "about": "Coaching"
+    },
+    "langSwitch": {
+      "groupLabel": "Nyelv váltása",
+      "hu": "Váltás magyarra",
+      "en": "Váltás angolra"
+    }
+  },
+  "hero": {
+    "eyebrow": "figure coaching",
+    "title": "Találd meg a saját alakodat a coachingban.",
+    "description": "Meghívlak, hogy fedezd fel a tisztább irányt, a mélyebb értelmet és a könnyedség érzetét, miközben kitalálod a következő lépést.",
+    "ctaPrimary": "Időpont foglalása",
+    "ctaSecondary": "Tudj meg többet",
+    "ctaNote": "A foglalási oldal új lapon nyílik meg.",
+    "visualCaption": "A Gestalt, a műkorcsolya, a kíváncsiság és a vizualizáció inspirálta."
+  },
+  "credo": {
+    "label": "Hitvallás",
+    "title": "Amiben hiszek, és miért fontos ez.",
+    "intro": "A coaching segít észrevenni, ami már jelen van, és könnyebbé teszi a tiszta, hiteles és magabiztos haladást.",
+    "pillars": {
+      "form": {
+        "title": "Forma és kontextus",
+        "body": "A Gestalt-pszichológiából merítve értékelem a figura és a háttér viszonyát — azt, ami kiemelkedik, és azt, ami támogatja."
+      },
+      "skating": {
+        "title": "Korcsolyagyakorlat",
+        "body": "A műkorcsolya türelmet, ismétlést és kegyelmet tanít nyomás alatt — ugyanazok a minőségek, amelyek a coaching fejlődését is támogatják."
+      },
+      "figuring": {
+        "title": "Ráérekezni",
+        "body": "A coaching segít megérteni a bizonytalant, és előrelépéssé alakítani azt."
+      },
+      "vision": {
+        "title": "Vizualizáció",
+        "body": "Hiszek abban, hogy érdemes tiszta képet alkotni arról, mi tűnik lehetségesnek, majd azt kezelhető, értelmes lépésekre bontani."
+      }
+    }
+  },
+  "me": {
+    "photoPlaceholder": "Fotó",
+    "label": "Rólam",
+    "title": "Szia — én vagyok a coachod.",
+    "paragraph1": "Amatőr, felnőtt versenyműkorcsolyázó és műkorcsolyaedző vagyok. Ezt a tapasztalatot hozom a coachingba, és addig keresem a neked működő megközelítést, míg az üzenetem valóban át nem ér számodra.",
+    "paragraph2": "Az a célom, hogy segítsen jól látnod, megérteni és felszerelkezni a továbblépéshez kevesebb ellenállással és több könnyedséggel."
+  },
+  "about": {
+    "label": "A coachingról",
+    "title": "Mikor lehet a coaching jó megoldás.",
+    "intro": "A coaching akkor segít, ha szeretnél:",
+    "list": {
+      "item1": "tisztázni a következő lépést vagy irányt",
+      "item2": "megérteni egy ismétlődő mintát",
+      "item3": "új válaszadási módokat gyakorolni stresszre vagy változásra",
+      "item4": "harmóniát teremteni a céljaid és a mindennapi életed között"
+    },
+    "paragraph": "Együtt feltérképezhetjük az erősségeidet, tisztább képet alkothatunk arról, mi számít, és gyakorlatias szokásokat tervezhetünk, amelyek fenntarthatók.",
+    "features": {
+      "guidance": {
+        "title": "Gondos irányítás",
+        "body": "Coaching beszélgetés, ami segít abban, hogy lássanak és támogassanak, miközben kibogozod a dolgokat."
+      },
+      "practice": {
+        "title": "Gyakorlati munka",
+        "body": "Kicsi, reális következő lépések, amelyek lendületet adnak és előre visznek."
+      },
+      "clarity": {
+        "title": "Vizualis tisztaság",
+        "body": "Tisztabb kép arról, hogyan néz ki a siker számodra, teret hagyva az igazításhoz, miközben fejlődsz."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Figure Coaching — nyugodt, kiegyensúlyozott és megtapasztaló támogatás.",
+    "email": "hello@example.com"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Figure Coaching",
+    "description": "Figure Coaching helps adults find clearer direction, calm confidence, and momentum through coaching inspired by Gestalt psychology, figure skating, and visualization."
+  },
+  "nav": {
+    "brand": "Figure Coaching",
+    "toggleText": "Menu",
+    "toggleLabel": "Open navigation",
+    "links": {
+      "home": "Home",
+      "credo": "Credo",
+      "me": "About me",
+      "about": "Coaching"
+    },
+    "langSwitch": {
+      "groupLabel": "Language switch",
+      "hu": "Switch to Hungarian",
+      "en": "Switch to English"
+    }
+  },
+  "hero": {
+    "eyebrow": "figure coaching",
+    "title": "Find your own figure in coaching.",
+    "description": "I invite you to discover a clearer direction, a deeper sense of meaning, and a feeling of ease as you figure out your next step.",
+    "ctaPrimary": "Book a session",
+    "ctaSecondary": "Learn more",
+    "ctaNote": "The booking page opens in a new tab.",
+    "visualCaption": "Inspired by Gestalt, figure skating, curiosity, and visualization."
+  },
+  "credo": {
+    "label": "Credo",
+    "title": "What I believe, and why it matters.",
+    "intro": "Coaching helps you notice what's already there, and makes it easier to move forward clearly, authentically, and with confidence.",
+    "pillars": {
+      "form": {
+        "title": "Form and context",
+        "body": "Drawing on Gestalt psychology, I value the relationship between figure and ground — what stands out, and what supports it."
+      },
+      "skating": {
+        "title": "Skating practice",
+        "body": "Figure skating teaches patience, repetition, and grace under pressure — the same qualities that support growth in coaching."
+      },
+      "figuring": {
+        "title": "Figuring it out",
+        "body": "Coaching helps you make sense of uncertainty, and turn it into forward motion."
+      },
+      "vision": {
+        "title": "Visualization",
+        "body": "I believe in forming a clear picture of what feels possible, then breaking it into manageable, meaningful steps."
+      }
+    }
+  },
+  "me": {
+    "photoPlaceholder": "Photo",
+    "label": "About me",
+    "title": "Hi — I'm your coach.",
+    "paragraph1": "I'm an amateur adult competitive figure skater and figure skating coach. I bring that experience into coaching, and I keep looking for the approach that works for you until my message truly lands.",
+    "paragraph2": "My goal is to help you see clearly, understand, and equip yourself to move forward with less resistance and more ease."
+  },
+  "about": {
+    "label": "About coaching",
+    "title": "When coaching can be the right fit.",
+    "intro": "Coaching helps when you want to:",
+    "list": {
+      "item1": "clarify your next step or direction",
+      "item2": "understand a recurring pattern",
+      "item3": "practice new ways of responding to stress or change",
+      "item4": "create harmony between your goals and your everyday life"
+    },
+    "paragraph": "Together we can map out your strengths, form a clearer picture of what matters, and design practical habits that actually last.",
+    "features": {
+      "guidance": {
+        "title": "Attentive guidance",
+        "body": "A coaching conversation that helps you feel seen and supported as you work things out."
+      },
+      "practice": {
+        "title": "Practical work",
+        "body": "Small, realistic next steps that build momentum and move you forward."
+      },
+      "clarity": {
+        "title": "Visual clarity",
+        "body": "A clearer picture of what success looks like for you, with room to adjust as you grow."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Figure Coaching — calm, grounded, and experiential support.",
+    "email": "hello@example.com"
+  }
+}

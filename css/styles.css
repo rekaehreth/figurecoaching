@@ -1,37 +1,36 @@
 :root {
   color-scheme: light;
-  --accent: #d4a574;
-  --accent-10: #d4a5741a;
-  --accent-12: #d4a5741f;
-  --green-bg: #1f3a2f;
-  --green-text: #faf6f1;
-  --green-text-muted: #d4a574;
-  --green-text-dark-70: #faf6f1b3;
-  --green-primary: #2d5246;
-  --green-primary-soft: #4a7a6f;
-  --green-primary-08: #2d52460d;
-  --green-primary-10: #2d52461a;
-  --green-primary-12: #2d52461f;
-  --green-primary-14: #2d524624;
-  --green-surface: #ffffff0a;
-  --green-border: #ffffff0d;
-  --beige-bg: #f9f4ed;
-  --beige-text: #1f3a2f;
-  --beige-text-muted: #5a6f68;
-  --beige-text-dark-70: #1f3a2fb3;
-  --beige-primary: #1f3a2f;
-  --beige-primary-soft: #3d5a4f;
-  --beige-primary-08: #1f3a2f14;
-  --beige-primary-10: #1f3a2f1a;
-  --beige-primary-12: #1f3a2f1f;
-  --beige-primary-14: #1f3a2f24;
-  --beige-surface: #fffaf4;
-  --beige-border: #1f3a2f1f;
-  --card: #ffffff;
-  --card-text-muted: #5a756a;
-  --shadow: 0 24px 80px #1f3a2f14;
+
+  /* Canvas — warm, calm, consistent (no more block-alternating sections) */
+  --bg: #f7f1e6;
+  --bg-alt: #efe4cf;
+  --card: #fffbf3;
+
+  /* Pine green — the grounding, safety color */
+  --pine-950: #1c2e26;
+  --pine-900: #23392f;
+  --pine: #2f5246;
+  --pine-soft: #3f6a5e;
+  --pine-05: #2f52460d;
+  --pine-08: #2f524614;
+  --pine-10: #2f52461a;
+  --pine-14: #2f524624;
+  --pine-20: #2f524633;
+
+  /* Ink — text on beige */
+  --ink: #23392f;
+  --ink-muted: #5a6f66;
+  --ink-faint: #23392f99;
+
+  /* Gold — the thread. Used sparingly: hero graphic + hover/marker accents only */
+  --gold: #b6863d;
+  --gold-soft: #b6863d29;
+  --gold-glow: #b6863d4d;
+
+  --shadow: 0 20px 60px rgba(35, 57, 47, 0.08);
   --white: #ffffff;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 * {
@@ -45,8 +44,16 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--green-bg);
-  line-height: 1.6;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, "Iowan Old Style", serif;
+  font-weight: 500;
+  color: var(--pine-900);
+  letter-spacing: -0.01em;
 }
 
 img,
@@ -72,47 +79,20 @@ a.button {
   margin: 0 auto;
 }
 
-/* Green band: header, footer, even sections */
-.site-header,
-.site-footer,
-main > section:nth-child(even) {
-  --text: var(--green-text);
-  --text-muted: var(--green-text-muted);
-  --text-dark-70: var(--green-text-dark-70);
-  --primary: var(--green-primary);
-  --primary-soft: var(--green-primary-soft);
-  --primary-08: var(--green-primary-08);
-  --primary-10: var(--green-primary-10);
-  --primary-12: var(--green-primary-12);
-  --primary-14: var(--green-primary-14);
-  --surface: var(--green-surface);
-  --border: var(--green-border);
-  background: var(--green-bg);
-  color: var(--green-text);
+main > section {
+  background: var(--bg);
 }
 
-/* Beige band: odd sections */
-main > section:nth-child(odd) {
-  --text: var(--beige-text);
-  --text-muted: var(--beige-text-muted);
-  --text-dark-70: var(--beige-text-dark-70);
-  --primary: var(--beige-primary);
-  --primary-soft: var(--beige-primary-soft);
-  --primary-08: var(--beige-primary-08);
-  --primary-10: var(--beige-primary-10);
-  --primary-12: var(--beige-primary-12);
-  --primary-14: var(--beige-primary-14);
-  --surface: var(--beige-surface);
-  --border: var(--beige-border);
-  background: var(--beige-bg);
-  color: var(--beige-text);
+main > section:nth-child(even) {
+  background: var(--bg-alt);
 }
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid var(--green-border);
+  background: var(--bg);
+  border-bottom: 1px solid var(--pine-08);
 }
 
 .top-nav {
@@ -120,50 +100,84 @@ main > section:nth-child(odd) {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 1.1rem 0;
 }
 
 .brand {
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--text);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--pine-900);
 }
 
 .nav-links {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
-  color: var(--text-muted);
+  color: var(--ink-muted);
   transition: color 0.25s ease;
+  font-size: 0.95rem;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: var(--text);
+  color: var(--pine-900);
 }
 
 .nav-toggle {
   display: none;
   border: 0;
   background: transparent;
-  color: var(--text);
+  color: var(--pine-900);
   cursor: pointer;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--pine-05);
+  border: 1px solid var(--pine-08);
+}
+
+.lang-btn {
+  border: 0;
+  background: transparent;
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: var(--pine-900);
+}
+
+.lang-btn.is-active {
+  background: var(--pine);
+  color: var(--white);
 }
 
 .section-label {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--primary);
-  font-size: 0.95rem;
-  font-weight: 700;
+  color: var(--pine-soft);
+  font-size: 0.85rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
 }
 
 .section-header {
@@ -171,7 +185,7 @@ main > section:nth-child(odd) {
 }
 
 .section-header h2 {
-  font-size: clamp(2rem, 2.4vw, 3rem);
+  font-size: clamp(2rem, 2.4vw, 2.85rem);
   margin: 0.5rem 0 0;
 }
 
@@ -179,42 +193,42 @@ main > section:nth-child(odd) {
 .credo-section,
 .me-section,
 .about-section {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .hero-grid,
 .me-grid,
 .about-grid {
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .hero-grid {
   align-items: center;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-size: clamp(2.4rem, 3.6vw, 3.8rem);
   margin: 0;
-  line-height: 1.02;
+  line-height: 1.12;
 }
 
 .hero-copy p {
-  max-width: 42rem;
+  max-width: 40rem;
   margin: 1.5rem 0;
-  color: var(--text-muted);
-  font-size: 1.05rem;
+  color: var(--ink-muted);
+  font-size: 1.08rem;
 }
 
 .eyebrow {
   display: inline-block;
   margin-bottom: 1rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--pine-soft);
 }
 
 .hero-actions {
@@ -225,14 +239,16 @@ main > section:nth-child(odd) {
 }
 
 .button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.95rem 1.5rem;
+  padding: 0.95rem 1.6rem;
   border-radius: 999px;
   border: 1px solid transparent;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  overflow: hidden;
 }
 
 .button:hover,
@@ -241,21 +257,43 @@ main > section:nth-child(odd) {
 }
 
 .button-primary {
-  background: var(--primary);
+  background: var(--pine);
   color: var(--white);
-  box-shadow: 0 16px 40px var(--primary-14);
+  box-shadow: 0 16px 40px var(--pine-14);
+}
+
+/* The thread — a single gold accent that only appears when you act */
+.button-primary::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  height: 1.5px;
+  width: 0;
+  background: var(--gold);
+  transform: translateX(-50%);
+  transition: width 0.35s ease;
+}
+
+.button-primary:hover::after,
+.button-primary:focus-visible::after {
+  width: calc(100% - 2.4rem);
 }
 
 .button-secondary {
-  background: var(--surface);
-  color: var(--text);
-  border-color: var(--border);
+  background: transparent;
+  color: var(--pine-900);
+  border-color: var(--pine-20);
+}
+
+.button-secondary:hover {
+  background: var(--pine-05);
 }
 
 .button-note {
   margin-top: 0.75rem;
-  color: var(--text-dark-70);
-  font-size: 0.95rem;
+  color: var(--ink-faint);
+  font-size: 0.9rem;
 }
 
 .hero-visual {
@@ -264,35 +302,22 @@ main > section:nth-child(odd) {
   text-align: center;
 }
 
-.visual-circle {
-  width: min(360px, 100%);
+.thread-figure {
+  width: min(380px, 100%);
   aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: linear-gradient(180deg, var(--primary-12), var(--accent-10));
-  box-shadow: inset 0 0 0 1px var(--primary-08);
-  position: relative;
-}
-
-.visual-dot {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--primary);
-  box-shadow: 0 0 0 12px var(--primary-12);
 }
 
 .visual-caption {
   margin-top: 1.5rem;
-  max-width: 26rem;
-  color: var(--text-muted);
+  max-width: 24rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
 }
 
 .section-intro {
   margin: 0 0 2.5rem;
-  color: var(--text-muted);
-  max-width: 52rem;
+  color: var(--ink-muted);
+  max-width: 50rem;
 }
 
 .pillar-grid {
@@ -303,113 +328,27 @@ main > section:nth-child(odd) {
 
 .pillar-card {
   background: var(--card);
-  border: 1px solid var(--primary-08);
-  border-radius: 24px;
-  padding: 1.75rem;
+  border: 1px solid var(--pine-08);
+  border-radius: 20px;
+  padding: 1.85rem;
   box-shadow: var(--shadow);
 }
 
 .pillar-card h3 {
-  margin: 1rem 0 0.65rem;
-  color: var(--beige-primary);
+  margin: 1.1rem 0 0.6rem;
+  font-size: 1.15rem;
 }
 
 .pillar-card p {
   margin: 0;
-  color: var(--card-text-muted);
+  color: var(--ink-muted);
 }
 
-.icon {
-  width: 56px;
-  height: 56px;
-  display: grid;
-  place-items: center;
-  border-radius: 18px;
-  background: var(--primary-10);
-  color: var(--primary);
-}
-
-.icon-circle {
-  position: relative;
-}
-
-.icon-circle::before {
-  content: "";
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: var(--primary);
-  position: absolute;
-  top: 16px;
-  left: 16px;
-}
-
-.icon-skate::before,
-.icon-skate::after {
-  content: "";
-  position: absolute;
-  background: var(--primary);
-}
-
-.icon-skate::before {
-  width: 30px;
-  height: 6px;
-  bottom: 16px;
-  left: 14px;
-  border-radius: 999px;
-}
-
-.icon-skate::after {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  top: 16px;
-  right: 14px;
-}
-
-.icon-lightbulb::before {
-  content: "";
-  width: 16px;
-  height: 20px;
-  border-radius: 12px 12px 8px 8px;
-  border: 4px solid var(--primary);
-  border-bottom: none;
-  position: absolute;
-  top: 10px;
-  left: 18px;
-}
-
-.icon-lightbulb::after {
-  content: "";
-  width: 12px;
-  height: 8px;
-  background: var(--primary);
-  position: absolute;
-  bottom: 12px;
-  left: 22px;
-  border-radius: 4px;
-}
-
-.icon-vision::before {
-  content: "";
-  width: 26px;
-  height: 14px;
-  border: 4px solid var(--primary);
-  border-radius: 12px / 7px;
-  position: absolute;
-  top: 18px;
-  left: 15px;
-}
-
-.icon-vision::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--primary);
-  position: absolute;
-  top: 22px;
-  right: 14px;
+.pillar-icon {
+  width: 44px;
+  height: 44px;
+  stroke: var(--pine);
+  color: var(--pine);
 }
 
 .me-grid {
@@ -423,40 +362,56 @@ main > section:nth-child(odd) {
 }
 
 .portrait-frame {
-  width: min(420px, 100%);
+  width: min(400px, 100%);
   aspect-ratio: 4 / 5;
-  border-radius: 32px;
-  background: linear-gradient(180deg, var(--primary-14), var(--accent-12));
-  border: 1px solid var(--primary-08);
+  border-radius: 28px;
+  background: linear-gradient(180deg, var(--pine-08), var(--bg-alt));
+  border: 1px solid var(--pine-08);
   display: grid;
   place-items: center;
-  color: var(--text-muted);
-  font-weight: 700;
+  color: var(--ink-muted);
+  font-weight: 600;
 }
 
 .me-copy p {
-  color: var(--text-muted);
+  color: var(--ink-muted);
   margin: 1rem 0;
 }
 
 .about-grid {
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
   grid-template-columns: 1.1fr 0.9fr;
 }
 
-.about-copy p,
-.about-copy ul {
+.about-copy p {
   margin: 0 0 1rem;
 }
 
 .about-copy ul {
-  padding-left: 1.25rem;
-  color: var(--text-muted);
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  color: var(--ink-muted);
 }
 
 .about-copy li {
+  position: relative;
   margin-bottom: 0.75rem;
+  padding-left: 1.4rem;
+}
+
+/* A quiet gold mark — the thread showing up one more time, as a guide through the list */
+.about-copy li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.85;
 }
 
 .about-features {
@@ -467,24 +422,25 @@ main > section:nth-child(odd) {
 .feature-card {
   background: var(--card);
   padding: 1.5rem;
-  border-radius: 24px;
-  border: 1px solid var(--primary-08);
+  border-radius: 20px;
+  border: 1px solid var(--pine-08);
   box-shadow: var(--shadow);
 }
 
 .feature-card h3 {
   margin: 0 0 0.75rem;
-  color: var(--beige-primary);
+  font-size: 1.1rem;
 }
 
 .feature-card p {
   margin: 0;
-  color: var(--card-text-muted);
+  color: var(--ink-muted);
 }
 
 .site-footer {
-  padding: 2rem 0;
-  border-top: 1px solid var(--green-border);
+  padding: 2.5rem 0;
+  background: var(--pine-900);
+  color: var(--bg);
 }
 
 .footer-grid {
@@ -495,8 +451,17 @@ main > section:nth-child(odd) {
   align-items: center;
 }
 
+.footer-grid p {
+  margin: 0;
+  opacity: 0.85;
+}
+
 .footer-grid a {
-  color: var(--text-muted);
+  opacity: 0.85;
+}
+
+.footer-grid a:hover {
+  opacity: 1;
 }
 
 .section-reveal {
@@ -508,6 +473,24 @@ main > section:nth-child(odd) {
 .section-reveal.revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .section-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .button,
+  .button-primary::after,
+  .lang-btn {
+    transition: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -522,6 +505,10 @@ main > section:nth-child(odd) {
     flex-direction: column;
     align-items: stretch;
   }
+
+  .thread-figure {
+    width: min(280px, 100%);
+  }
 }
 
 @media (max-width: 720px) {
@@ -535,25 +522,34 @@ main > section:nth-child(odd) {
   }
 
   .nav-links {
+    display: none;
     flex-direction: column;
     width: 100%;
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  .lang-switch {
+    margin-top: 1rem;
   }
 
   .hero-section,
   .credo-section,
   .me-section,
   .about-section {
-    padding: 3rem 0;
+    padding: 3.5rem 0;
   }
 
   .hero-copy h1 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width: 520px) {
   .section-header h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .button {
