@@ -1,51 +1,31 @@
 :root {
   color-scheme: light;
 
-  /* Canvas — deep warm stone, not bright cream; softens the jump into the
-     dark pine sections instead of flipping from near-white to near-black */
   --bg: #e3d9c5;
   --card: #fffdf8;
 
-  /* Pine green — richer/more saturated than a flat gray-green so it holds
-     its own next to the gold, while keeping the same depth as before */
-  --pine-950: #1c2e26;
   --pine-900: #1b4130;
-  --pine-700: #235e49;
   --pine: #235e49;
   --pine-soft: #215042;
   --pine-05: #235e490d;
   --pine-08: #235e4914;
-  --pine-10: #235e491a;
-  --pine-14: #235e4924;
   --pine-20: #235e4933;
 
-  /* Warm champagne text for the dark pine header/hero/footer — enough gold
-     undertone to read as a color, not flat parchment, but light/soft
-     enough to avoid tipping into a yellowed look */
   --on-dark: #decfba;
   --on-dark-muted: #decfbacc;
   --on-dark-surface: #ffffff14;
   --on-dark-border: #ffffff24;
 
-  /* Ink — text on the stone canvas */
-  --ink: #1b4130;
   --ink-muted: #27533f;
   --ink-faint: #1b413099;
 
-  /* Gold — bright, pops against the dark pine sections; pairs with dark
-     pine-900 text (not white) since it's light enough to fail with white */
   --gold: #e0ab52;
-  --gold-hover: #cf9a41;
-  --gold-14: #e0ab5233;
 
-  /* CTA gold — cooler than --gold, used only for primary buttons so the
-     circle-mark/label gold above keeps its warmer tone */
   --gold-cta: #e0b552;
   --gold-cta-hover: #d4a026;
   --gold-cta-14: #e0b55233;
 
   --shadow: 0 20px 60px rgba(27, 65, 48, 0.08);
-  --white: #ffffff;
   --opacity-muted: 0.85;
 
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -67,7 +47,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background: var(--bg);
-  color: var(--ink);
+  color: var(--pine-900);
   line-height: 1.65;
 }
 
@@ -105,8 +85,6 @@ main > section {
   background: var(--bg);
 }
 
-/* Hero and Me are dark-pine sections — green shows up more than just the
-   header/footer bookends, alternating with the light Credo/About sections */
 .hero-section,
 .me-section {
   background: var(--pine-900);
@@ -468,7 +446,6 @@ main > section {
   padding-left: 1.4rem;
 }
 
-/* A quiet gold mark — the thread showing up one more time, as a guide through the list */
 .about-copy li::before {
   content: "";
   position: absolute;
