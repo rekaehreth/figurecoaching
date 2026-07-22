@@ -1,33 +1,50 @@
 :root {
   color-scheme: light;
 
-  /* Canvas — warm, calm, consistent (no more block-alternating sections) */
-  --bg: #f7f1e6;
-  --bg-alt: #efe4cf;
-  --card: #fffbf3;
+  /* Canvas — deep warm stone, not bright cream; softens the jump into the
+     dark pine sections instead of flipping from near-white to near-black */
+  --bg: #e3d9c5;
+  --card: #fffdf8;
 
-  /* Pine green — the grounding, safety color */
+  /* Pine green — richer/more saturated than a flat gray-green so it holds
+     its own next to the gold, while keeping the same depth as before */
   --pine-950: #1c2e26;
-  --pine-900: #23392f;
-  --pine: #2f5246;
-  --pine-soft: #3f6a5e;
-  --pine-05: #2f52460d;
-  --pine-08: #2f524614;
-  --pine-10: #2f52461a;
-  --pine-14: #2f524624;
-  --pine-20: #2f524633;
+  --pine-900: #1b4130;
+  --pine-700: #235e49;
+  --pine: #235e49;
+  --pine-soft: #215042;
+  --pine-05: #235e490d;
+  --pine-08: #235e4914;
+  --pine-10: #235e491a;
+  --pine-14: #235e4924;
+  --pine-20: #235e4933;
 
-  /* Ink — text on beige */
-  --ink: #23392f;
-  --ink-muted: #5a6f66;
-  --ink-faint: #23392f99;
+  /* Warm champagne text for the dark pine header/hero/footer — enough gold
+     undertone to read as a color, not flat parchment, but light/soft
+     enough to avoid tipping into a yellowed look */
+  --on-dark: #decfba;
+  --on-dark-muted: #decfbacc;
+  --on-dark-surface: #ffffff14;
+  --on-dark-border: #ffffff24;
 
-  /* Gold — the thread. Used sparingly: hero graphic + hover/marker accents only */
-  --gold: #b6863d;
-  --gold-soft: #b6863d29;
-  --gold-glow: #b6863d4d;
+  /* Ink — text on the stone canvas */
+  --ink: #1b4130;
+  --ink-muted: #27533f;
+  --ink-faint: #1b413099;
 
-  --shadow: 0 20px 60px rgba(35, 57, 47, 0.08);
+  /* Gold — bright, pops against the dark pine sections; pairs with dark
+     pine-900 text (not white) since it's light enough to fail with white */
+  --gold: #e0ab52;
+  --gold-hover: #cf9a41;
+  --gold-14: #e0ab5233;
+
+  /* CTA gold — cooler than --gold, used only for primary buttons so the
+     circle-mark/label gold above keeps its warmer tone */
+  --gold-cta: #e0b552;
+  --gold-cta-hover: #d4a026;
+  --gold-cta-14: #e0b55233;
+
+  --shadow: 0 20px 60px rgba(27, 65, 48, 0.08);
   --white: #ffffff;
 
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -83,16 +100,45 @@ main > section {
   background: var(--bg);
 }
 
-main > section:nth-child(even) {
-  background: var(--bg-alt);
+/* Hero and Me are dark-pine sections — green shows up more than just the
+   header/footer bookends, alternating with the light Credo/About sections */
+.hero-section,
+.me-section {
+  background: var(--pine-900);
+}
+
+.hero-section .eyebrow,
+.hero-section .section-label,
+.me-section .section-label {
+  color: var(--gold);
+}
+
+.hero-section h1,
+.hero-section h2,
+.me-section h2 {
+  color: var(--on-dark);
+}
+
+.hero-section .button-note,
+.hero-section .visual-caption {
+  color: var(--on-dark-muted);
+}
+
+.hero-section .button-secondary {
+  color: var(--on-dark);
+  border-color: var(--on-dark-border);
+}
+
+.hero-section .button-secondary:hover {
+  background: var(--on-dark-surface);
 }
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: var(--bg);
-  border-bottom: 1px solid var(--pine-08);
+  background: var(--pine-900);
+  box-shadow: 0 4px 20px rgba(20, 32, 27, 0.18);
 }
 
 .top-nav {
@@ -108,7 +154,7 @@ main > section:nth-child(even) {
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: var(--pine-900);
+  color: var(--on-dark);
 }
 
 .nav-links {
@@ -120,21 +166,21 @@ main > section:nth-child(even) {
 }
 
 .nav-links a {
-  color: var(--ink-muted);
+  color: var(--on-dark-muted);
   transition: color 0.25s ease;
   font-size: 0.95rem;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: var(--pine-900);
+  color: var(--on-dark);
 }
 
 .nav-toggle {
   display: none;
   border: 0;
   background: transparent;
-  color: var(--pine-900);
+  color: var(--on-dark);
   cursor: pointer;
 }
 
@@ -143,30 +189,30 @@ main > section:nth-child(even) {
   gap: 2px;
   padding: 3px;
   border-radius: 999px;
-  background: var(--pine-05);
-  border: 1px solid var(--pine-08);
+  background: var(--on-dark-surface);
+  border: 1px solid var(--on-dark-border);
 }
 
 .lang-btn {
   border: 0;
   background: transparent;
-  color: var(--ink-muted);
+  color: var(--on-dark-muted);
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  padding: 0.3rem 0.7rem;
+  padding: 0.4rem 0.75rem;
   border-radius: 999px;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .lang-btn:hover {
-  color: var(--pine-900);
+  color: var(--on-dark);
 }
 
 .lang-btn.is-active {
-  background: var(--pine);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--pine-900);
 }
 
 .section-label {
@@ -217,7 +263,7 @@ main > section:nth-child(even) {
 .hero-copy p {
   max-width: 40rem;
   margin: 1.5rem 0;
-  color: var(--ink-muted);
+  color: var(--on-dark-muted);
   font-size: 1.08rem;
 }
 
@@ -257,27 +303,15 @@ main > section:nth-child(even) {
 }
 
 .button-primary {
-  background: var(--pine);
-  color: var(--white);
-  box-shadow: 0 16px 40px var(--pine-14);
+  background: var(--gold-cta);
+  color: var(--pine-900);
+  box-shadow: 0 16px 40px var(--gold-cta-14);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
-/* The thread — a single gold accent that only appears when you act */
-.button-primary::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 8px;
-  height: 1.5px;
-  width: 0;
-  background: var(--gold);
-  transform: translateX(-50%);
-  transition: width 0.35s ease;
-}
-
-.button-primary:hover::after,
-.button-primary:focus-visible::after {
-  width: calc(100% - 2.4rem);
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: var(--gold-cta-hover);
 }
 
 .button-secondary {
@@ -344,9 +378,33 @@ main > section:nth-child(even) {
   color: var(--ink-muted);
 }
 
+.icon-chip {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.icon-chip--form {
+  background: #e8e2f0;
+}
+
+.icon-chip--skating {
+  background: #e1ebe4;
+}
+
+.icon-chip--figuring {
+  background: #f3e8d9;
+}
+
+.icon-chip--vision {
+  background: #e1e9f0;
+}
+
 .pillar-icon {
-  width: 44px;
-  height: 44px;
+  width: 28px;
+  height: 28px;
   stroke: var(--pine);
   color: var(--pine);
 }
@@ -365,16 +423,16 @@ main > section:nth-child(even) {
   width: min(400px, 100%);
   aspect-ratio: 4 / 5;
   border-radius: 28px;
-  background: linear-gradient(180deg, var(--pine-08), var(--bg-alt));
-  border: 1px solid var(--pine-08);
+  background: linear-gradient(180deg, var(--on-dark-surface), transparent);
+  border: 1px solid var(--on-dark-border);
   display: grid;
   place-items: center;
-  color: var(--ink-muted);
+  color: var(--on-dark-muted);
   font-weight: 600;
 }
 
 .me-copy p {
-  color: var(--ink-muted);
+  color: var(--on-dark-muted);
   margin: 1rem 0;
 }
 
@@ -440,7 +498,7 @@ main > section:nth-child(even) {
 .site-footer {
   padding: 2.5rem 0;
   background: var(--pine-900);
-  color: var(--bg);
+  color: var(--on-dark);
 }
 
 .footer-grid {
@@ -487,7 +545,7 @@ main > section:nth-child(even) {
   }
 
   .button,
-  .button-primary::after,
+  .button-primary,
   .lang-btn {
     transition: none;
   }
