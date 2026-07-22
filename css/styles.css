@@ -46,6 +46,7 @@
 
   --shadow: 0 20px 60px rgba(27, 65, 48, 0.08);
   --white: #ffffff;
+  --opacity-muted: 0.85;
 
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -315,7 +316,6 @@ main > section {
   background: var(--gold-cta);
   color: var(--pine-900);
   box-shadow: 0 16px 40px var(--gold-cta-14);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .button-primary:hover,
@@ -478,7 +478,7 @@ main > section {
   height: 6px;
   border-radius: 50%;
   background: var(--gold);
-  opacity: 0.85;
+  opacity: var(--opacity-muted);
 }
 
 .about-features {
@@ -520,11 +520,11 @@ main > section {
 
 .footer-grid p {
   margin: 0;
-  opacity: 0.85;
+  opacity: var(--opacity-muted);
 }
 
 .footer-grid a {
-  opacity: 0.85;
+  opacity: var(--opacity-muted);
 }
 
 .footer-grid a:hover {

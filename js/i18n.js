@@ -56,28 +56,37 @@
     });
   }
 
-  function applyTranslations(dict) {
+  function applyTextContent(dict) {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
-      const key = el.getAttribute("data-i18n");
-      const value = getByPath(dict, key);
+      const value = getByPath(dict, el.getAttribute("data-i18n"));
       if (typeof value === "string") el.textContent = value;
     });
+  }
 
+  function applyAttributes(dict) {
     document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
-      const spec = el.getAttribute("data-i18n-attr");
-      spec.split(",").forEach((pair) => {
-        const [attr, key] = pair.split(":").map((part) => part.trim());
-        if (!attr || !key) return;
-        const value = getByPath(dict, key);
-        if (typeof value === "string") el.setAttribute(attr, value);
-      });
+      el.getAttribute("data-i18n-attr")
+        .split(",")
+        .forEach((pair) => {
+          const [attr, key] = pair.split(":").map((part) => part.trim());
+          if (!attr || !key) return;
+          const value = getByPath(dict, key);
+          if (typeof value === "string") el.setAttribute(attr, value);
+        });
     });
+  }
 
+  function applyAriaLabels(dict) {
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
-      const key = el.getAttribute("data-i18n-aria");
-      const value = getByPath(dict, key);
+      const value = getByPath(dict, el.getAttribute("data-i18n-aria"));
       if (typeof value === "string") el.setAttribute("aria-label", value);
     });
+  }
+
+  function applyTranslations(dict) {
+    applyTextContent(dict);
+    applyAttributes(dict);
+    applyAriaLabels(dict);
   }
 
   function updateLangSwitch(lang) {
