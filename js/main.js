@@ -1,3 +1,7 @@
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const reveals = document.querySelectorAll(".section-reveal");
   const observer = new IntersectionObserver(
@@ -12,6 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.15 }
   );
   reveals.forEach((section) => observer.observe(section));
+
+  const header = document.querySelector(".site-header");
+  if (header) {
+    const updateHeaderShadow = () => {
+      header.classList.toggle("is-scrolled", window.scrollY > 0);
+    };
+    updateHeaderShadow();
+    window.addEventListener("scroll", updateHeaderShadow, { passive: true });
+  }
 
   const navToggle = document.querySelector(".nav-toggle");
   const navLinks = document.querySelector(".nav-links");

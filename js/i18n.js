@@ -112,6 +112,8 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     initLangSwitch();
-    setLang(resolveInitialLang());
+    setLang(resolveInitialLang())
+      .catch((err) => console.error(err))
+      .finally(() => document.documentElement.classList.remove("i18n-loading"));
   });
 })();
