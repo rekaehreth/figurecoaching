@@ -1,29 +1,21 @@
 :root {
   color-scheme: light;
 
-  --bg: #e3d9c5;
+  --cream: #e3d9c5;
   --card: #fffdf8;
 
   --pine-900: #1b4130;
   --pine: #235e49;
-  --pine-soft: #215042;
   --pine-05: #235e490d;
   --pine-08: #235e4914;
   --pine-20: #235e4933;
 
-  --on-dark: #decfba;
-  --on-dark-muted: #decfbacc;
-  --on-dark-surface: #ffffff14;
-  --on-dark-border: #ffffff24;
-
-  --ink-muted: #27533f;
-  --ink-faint: #1b413099;
+  --on-dark-muted: #e3d9c5cc;
+  --on-dark-line: #fffdf824;
 
   --gold: #e0ab52;
-
-  --gold-cta: #e0b552;
-  --gold-cta-hover: #d4a026;
-  --gold-cta-14: #e0b55233;
+  --gold-14: #e0ab5233;
+  --gold-hover: #d4a026;
 
   --shadow: 0 20px 60px rgba(27, 65, 48, 0.08);
   --opacity-muted: 0.85;
@@ -46,7 +38,7 @@ html.i18n-loading body {
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
+  background: var(--cream);
   color: var(--pine-900);
   line-height: 1.65;
 }
@@ -82,7 +74,7 @@ a.button {
 }
 
 main > section {
-  background: var(--bg);
+  background: var(--cream);
 }
 
 .hero-section,
@@ -99,7 +91,7 @@ main > section {
 .hero-section h1,
 .hero-section h2,
 .me-section h2 {
-  color: var(--on-dark);
+  color: var(--cream);
 }
 
 .hero-section .button-note,
@@ -108,12 +100,12 @@ main > section {
 }
 
 .hero-section .button-secondary {
-  color: var(--on-dark);
-  border-color: var(--on-dark-border);
+  color: var(--cream);
+  border-color: var(--on-dark-line);
 }
 
 .hero-section .button-secondary:hover {
-  background: var(--on-dark-surface);
+  background: var(--on-dark-line);
 }
 
 .site-header {
@@ -121,12 +113,12 @@ main > section {
   top: 0;
   z-index: 20;
   background: var(--pine-900);
-  box-shadow: 0 4px 20px rgba(20, 32, 27, 0);
+  box-shadow: 0 4px 20px rgba(27, 65, 48, 0);
   transition: box-shadow 0.2s ease;
 }
 
 .site-header.is-scrolled {
-  box-shadow: 0 4px 20px rgba(20, 32, 27, 0.18);
+  box-shadow: 0 4px 20px rgba(27, 65, 48, 0.18);
 }
 
 .top-nav {
@@ -142,7 +134,7 @@ main > section {
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: var(--on-dark);
+  color: var(--cream);
 }
 
 .nav-links {
@@ -161,14 +153,14 @@ main > section {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: var(--on-dark);
+  color: var(--cream);
 }
 
 .nav-toggle {
   display: none;
   border: 0;
   background: transparent;
-  color: var(--on-dark);
+  color: var(--cream);
   cursor: pointer;
 }
 
@@ -177,8 +169,8 @@ main > section {
   gap: 2px;
   padding: 3px;
   border-radius: 999px;
-  background: var(--on-dark-surface);
-  border: 1px solid var(--on-dark-border);
+  background: var(--on-dark-line);
+  border: 1px solid var(--on-dark-line);
 }
 
 .lang-btn {
@@ -195,7 +187,7 @@ main > section {
 }
 
 .lang-btn:hover {
-  color: var(--on-dark);
+  color: var(--cream);
 }
 
 .lang-btn.is-active {
@@ -207,7 +199,7 @@ main > section {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--pine-soft);
+  color: var(--pine);
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -225,6 +217,7 @@ main > section {
 
 .hero-section,
 .credo-section,
+.roots-section,
 .me-section,
 .about-section {
   padding: 5rem 0;
@@ -262,7 +255,7 @@ main > section {
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--pine-soft);
+  color: var(--pine);
 }
 
 .hero-actions {
@@ -291,14 +284,14 @@ main > section {
 }
 
 .button-primary {
-  background: var(--gold-cta);
+  background: var(--gold);
   color: var(--pine-900);
-  box-shadow: 0 16px 40px var(--gold-cta-14);
+  box-shadow: 0 16px 40px var(--gold-14);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: var(--gold-cta-hover);
+  background: var(--gold-hover);
 }
 
 .button-secondary {
@@ -313,7 +306,8 @@ main > section {
 
 .button-note {
   margin-top: 0.75rem;
-  color: var(--ink-faint);
+  color: var(--pine);
+  opacity: var(--opacity-muted);
   font-size: 0.9rem;
 }
 
@@ -331,13 +325,13 @@ main > section {
 .visual-caption {
   margin-top: 1.5rem;
   max-width: 24rem;
-  color: var(--ink-muted);
+  color: var(--pine);
   font-size: 0.95rem;
 }
 
 .section-intro {
   margin: 0 0 2.5rem;
-  color: var(--ink-muted);
+  color: var(--pine);
   max-width: 50rem;
 }
 
@@ -362,7 +356,7 @@ main > section {
 
 .pillar-card p {
   margin: 0;
-  color: var(--ink-muted);
+  color: var(--pine);
 }
 
 .icon-chip {
@@ -374,19 +368,19 @@ main > section {
 }
 
 .icon-chip--form {
-  background: #e8e2f0;
+  background: #e4e6f1;
 }
 
 .icon-chip--skating {
-  background: #e1ebe4;
+  background: #e0ede3;
 }
 
 .icon-chip--figuring {
-  background: #f3e8d9;
+  background: #f1e6d5;
 }
 
 .icon-chip--vision {
-  background: #e1e9f0;
+  background: #e4e6f1;
 }
 
 .pillar-icon {
@@ -394,6 +388,52 @@ main > section {
   height: 28px;
   stroke: var(--pine);
   color: var(--pine);
+}
+
+.tree-visual {
+  display: grid;
+  place-items: center;
+  margin: 0 0 -0.5rem;
+}
+
+.tree-figure {
+  width: min(560px, 100%);
+}
+
+.root-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.root-card {
+  background: var(--card);
+  border: 1px solid var(--pine-08);
+  border-radius: 20px;
+  padding: 1.85rem;
+  box-shadow: var(--shadow);
+}
+
+.root-card h3 {
+  margin: 1.1rem 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+.root-card p {
+  margin: 0;
+  color: var(--pine);
+}
+
+.icon-chip--safe {
+  background: #e0ede3;
+}
+
+.icon-chip--trust {
+  background: #f1e6d5;
+}
+
+.icon-chip--together {
+  background: #e4e6f1;
 }
 
 .me-grid {
@@ -410,8 +450,8 @@ main > section {
   width: min(400px, 100%);
   aspect-ratio: 4 / 5;
   border-radius: 28px;
-  background: linear-gradient(180deg, var(--on-dark-surface), transparent);
-  border: 1px solid var(--on-dark-border);
+  background: linear-gradient(180deg, var(--on-dark-line), transparent);
+  border: 1px solid var(--on-dark-line);
   display: grid;
   place-items: center;
   color: var(--on-dark-muted);
@@ -437,7 +477,7 @@ main > section {
   list-style: none;
   margin: 0 0 1.25rem;
   padding: 0;
-  color: var(--ink-muted);
+  color: var(--pine);
 }
 
 .about-copy li {
@@ -478,13 +518,13 @@ main > section {
 
 .feature-card p {
   margin: 0;
-  color: var(--ink-muted);
+  color: var(--pine);
 }
 
 .site-footer {
   padding: 2.5rem 0;
   background: var(--pine-900);
-  color: var(--on-dark);
+  color: var(--cream);
 }
 
 .footer-grid {
@@ -541,8 +581,13 @@ main > section {
   .hero-grid,
   .me-grid,
   .about-grid,
-  .pillar-grid {
+  .pillar-grid,
+  .root-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tree-figure {
+    width: min(360px, 100%);
   }
 
   .hero-actions {
@@ -581,6 +626,7 @@ main > section {
 
   .hero-section,
   .credo-section,
+  .roots-section,
   .me-section,
   .about-section {
     padding: 3.5rem 0;
