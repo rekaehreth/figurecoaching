@@ -10,6 +10,7 @@
     "links": {
       "home": "Home",
       "credo": "Credo",
+      "roots": "Values",
       "me": "About me",
       "about": "Coaching"
     },
@@ -48,6 +49,25 @@
       "vision": {
         "title": "Visualization",
         "body": "I believe in forming a clear picture of what feels possible, then breaking it into manageable, meaningful steps."
+      }
+    }
+  },
+  "roots": {
+    "label": "Values",
+    "title": "What keeps me rooted, even in a storm.",
+    "intro": "Three things I keep coming back to — with every client, on the ice, and in how I show up.",
+    "values": {
+      "safe": {
+        "title": "Safe, accepting space",
+        "body": "You can bring exactly what's true for you, without needing to perform or filter it first."
+      },
+      "trust": {
+        "title": "Trust and respect towards the process",
+        "body": "Growth isn't linear. I trust the process to unfold at its own pace, and respect wherever you are in it."
+      },
+      "together": {
+        "title": "With you, not against",
+        "body": "I'm not here to fix or push you. I'm on your side, working alongside you toward what you want."
       }
     }
   },

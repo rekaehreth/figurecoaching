@@ -10,6 +10,7 @@
     "links": {
       "home": "Kezdőlap",
       "credo": "Hitvallás",
+      "roots": "Értékek",
       "me": "Rólam",
       "about": "Coaching"
     },
@@ -48,6 +49,25 @@
       "vision": {
         "title": "Vizualizáció",
         "body": "Hiszek abban, hogy érdemes tiszta képet alkotni arról, mi tűnik lehetségesnek, majd azt kezelhető, értelmes lépésekre bontani."
+      }
+    }
+  },
+  "roots": {
+    "label": "Értékek",
+    "title": "Ami megtart, még viharban is.",
+    "intro": "Három dolog, amihez mindig visszatérek — minden ügyféllel, a jégen, és abban is, ahogy megjelenek.",
+    "values": {
+      "safe": {
+        "title": "Biztonságos, elfogadó tér",
+        "body": "Azt hozhatod, ami éppen igaz számodra — nem kell előtte megszűrnöd vagy megfelelned."
+      },
+      "trust": {
+        "title": "Bizalom és tisztelet a folyamat iránt",
+        "body": "A fejlődés nem lineáris. Bízom abban, hogy a folyamat a maga tempójában bontakozik ki, és tisztelem, bárhol is tartasz benne."
+      },
+      "together": {
+        "title": "Veled, nem ellened",
+        "body": "Nem azért vagyok itt, hogy megjavítsalak vagy noszogassalak. A te oldaladon állok, veled együtt haladva afelé, amit szeretnél."
       }
     }
   },
