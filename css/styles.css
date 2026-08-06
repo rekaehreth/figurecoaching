@@ -390,38 +390,88 @@ main > section {
   color: var(--pine);
 }
 
+.roots-grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+}
+
 .tree-visual {
   display: grid;
   place-items: center;
-  margin: 0 0 -0.5rem;
+  text-align: center;
+}
+
+.tree-figure-wrap {
+  position: relative;
+  width: min(420px, 100%);
+  aspect-ratio: 1;
 }
 
 .tree-figure {
-  width: min(560px, 100%);
+  position: absolute;
+  inset: 0;
+  background-color: var(--pine-900);
+  -webkit-mask-image: url("../img/tree-roots.svg");
+  mask-image: url("../img/tree-roots.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 
-.root-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.tree-markers {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.root-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .root-card {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
   background: var(--card);
   border: 1px solid var(--pine-08);
-  border-radius: 20px;
-  padding: 1.85rem;
+  border-radius: 16px;
+  padding: 1.15rem 1.35rem;
   box-shadow: var(--shadow);
 }
 
+.root-card-text {
+  flex: 1;
+}
+
 .root-card h3 {
-  margin: 1.1rem 0 0.6rem;
-  font-size: 1.15rem;
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
 }
 
 .root-card p {
   margin: 0;
   color: var(--pine);
+  font-size: 0.95rem;
+}
+
+.root-card .icon-chip {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+}
+
+.root-card .pillar-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .icon-chip--safe {
@@ -582,11 +632,11 @@ main > section {
   .me-grid,
   .about-grid,
   .pillar-grid,
-  .root-grid {
+  .roots-grid {
     grid-template-columns: 1fr;
   }
 
-  .tree-figure {
+  .tree-figure-wrap {
     width: min(360px, 100%);
   }
 
