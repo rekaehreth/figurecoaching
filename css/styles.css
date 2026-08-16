@@ -413,8 +413,8 @@ main > section {
   position: absolute;
   inset: 0;
   background-color: var(--pine-900);
-  -webkit-mask-image: url("../img/tree-roots.svg");
-  mask-image: url("../img/tree-roots.svg");
+  -webkit-mask-image: url("../assets/tree-roots.svg");
+  mask-image: url("../assets/tree-roots.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
