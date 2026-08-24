@@ -231,8 +231,8 @@ main > section {
 }
 
 .hero-grid {
-  align-items: center;
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 44rem;
 }
 
 .hero-copy h1 {
@@ -311,22 +311,45 @@ main > section {
   font-size: 0.9rem;
 }
 
-.hero-visual {
+.hero-signs {
   display: grid;
-  place-items: center;
-  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
-.thread-figure {
-  width: min(380px, 100%);
-  aspect-ratio: 1;
-}
-
-.visual-caption {
-  margin-top: 1.5rem;
-  max-width: 24rem;
-  color: var(--pine);
+.hero-signs h3 {
+  margin: 0 0 0.85rem;
   font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--pine);
+}
+
+.hero-signs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-signs li {
+  position: relative;
+  margin-bottom: 0.65rem;
+  padding-left: 1.2rem;
+  color: var(--on-dark-muted);
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.hero-signs li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: var(--opacity-muted);
 }
 
 .section-intro {
@@ -628,7 +651,6 @@ main > section {
 }
 
 @media (max-width: 900px) {
-  .hero-grid,
   .me-grid,
   .about-grid,
   .pillar-grid,
@@ -644,9 +666,12 @@ main > section {
     flex-direction: column;
     align-items: stretch;
   }
+}
 
-  .thread-figure {
-    width: min(280px, 100%);
+@media (max-width: 560px) {
+  .hero-signs {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 

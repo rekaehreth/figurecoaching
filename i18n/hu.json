@@ -22,12 +22,29 @@
   },
   "hero": {
     "eyebrow": "figure coaching",
-    "title": "Találd meg a saját alakodat a coachingban.",
-    "description": "Meghívlak, hogy fedezd fel a tisztább irányt, a mélyebb értelmet és a könnyedség érzetét, miközben kitalálod a következő lépést.",
+    "title": "Dolgozz a saját működéseddel, ne ellene.",
+    "description": "Halogatod, amit tudnál is, hogy meg kellene csinálnod? Annyi lehetőség van, hogy egy sem mozdul? Nem hiba van veled — csak még nem találtad meg a hozzád illő utat.",
     "ctaPrimary": "Időpont foglalása",
     "ctaSecondary": "Tudj meg többet",
     "ctaNote": "A foglalási oldal új lapon nyílik meg.",
-    "visualCaption": "A Gestalt, a műkorcsolya, a kíváncsiság és a vizualizáció inspirálta."
+    "signs": {
+      "label": "Gyakran tapasztalod, hogy",
+      "items": {
+        "item1": "ostorozod magad, amikor hibázol",
+        "item2": "elfolyik az idő a kezed közül",
+        "item3": "milliárd meg egy befejezetlen projekted van",
+        "item4": "impulzív döntéseket hozol, amit utána egyből megbánsz"
+      }
+    },
+    "wishes": {
+      "label": "Szeretnéd, ha...",
+      "items": {
+        "item1": "jobban értenéd a saját működésed",
+        "item2": "elfogadnád magad, ahogy éppen vagy",
+        "item3": "kevesebb szégyent éreznél",
+        "item4": "kevesebb nyitott projekt szívná az energiádat"
+      }
+    }
   },
   "credo": {
     "label": "Hitvallás",
@@ -75,8 +92,8 @@
   "me": {
     "photoPlaceholder": "Fotó",
     "label": "Rólam",
-    "title": "Szia — én vagyok a coachod.",
-    "paragraph1": "Amatőr, felnőtt versenyműkorcsolyázó és műkorcsolyaedző vagyok. Ezt a tapasztalatot hozom a coachingba, és addig keresem a neked működő megközelítést, míg az üzenetem valóban át nem ér számodra.",
+    "title": "Szia, Réka vagyok.",
+    "paragraph1": "Coachként egyéni ügyfeleket segítek magánéleti és munkahelyi témákban, a Gestalt eszköztárát használva. Amatőr, felnőtt versenyműkorcsolyázó és műkorcsolyaedző is vagyok — ezt a tapasztalatot is a coachingba hozom, és addig keresem a neked működő megközelítést, míg az üzenetem valóban át nem ér számodra.",
     "paragraph2": "Az a célom, hogy segítsen jól látnod, megérteni és felszerelkezni a továbblépéshez kevesebb ellenállással és több könnyedséggel."
   },
   "about": {
