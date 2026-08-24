@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="hu" class="i18n-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Figure Coaching</title>
+    <meta
+      name="description"
+      data-i18n-attr="content:meta.description"
+      content="A Figure Coaching segít felnőtteknek tisztább irányt, nyugodt magabiztosságot és lendületet találni Gestalt, műkorcsolya és vizualizáció ihlette coaching segítségével."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="top-nav container">
+        <a class="brand" href="#hero" data-i18n="nav.brand">Figure Coaching</a>
+        <button class="nav-toggle" data-i18n="nav.toggleText" data-i18n-aria="nav.toggleLabel" aria-label="Navigáció megnyitása" aria-expanded="false" aria-controls="primary-nav">Menü</button>
+        <ul class="nav-links" id="primary-nav">
+          <li><a href="#hero" data-i18n="nav.links.home">Kezdőlap</a></li>
+          <li><a href="#credo" data-i18n="nav.links.credo">Hitvallás</a></li>
+          <li><a href="#roots" data-i18n="nav.links.roots">Értékek</a></li>
+          <li><a href="#me" data-i18n="nav.links.me">Rólam</a></li>
+          <li><a href="#about" data-i18n="nav.links.about">Coaching</a></li>
+        </ul>
+        <div class="lang-switch" role="group" data-i18n-aria="nav.langSwitch.groupLabel" aria-label="Nyelv váltása">
+          <button type="button" class="lang-btn" data-lang="hu" data-i18n-aria="nav.langSwitch.hu" aria-label="Váltás magyarra" aria-pressed="true">HU</button>
+          <button type="button" class="lang-btn" data-lang="en" data-i18n-aria="nav.langSwitch.en" aria-label="Váltás angolra" aria-pressed="false">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow" data-i18n="hero.eyebrow">figure coaching</span>
+            <h1 data-i18n="hero.title">Dolgozz a saját működéseddel, ne ellene.</h1>
+            <p data-i18n="hero.description">
+              Halogatod, amit tudnál is, hogy meg kellene csinálnod? Annyi lehetőség van, hogy egy sem mozdul? Nem hiba van veled — csak még nem találtad meg a hozzád illő utat.
+            </p>
+            <div class="hero-signs">
+              <div class="hero-signs-col">
+                <h3 data-i18n="hero.signs.label">Gyakran tapasztalod, hogy</h3>
+                <ul>
+                  <li data-i18n="hero.signs.items.item1">ostorozod magad, amikor hibázol</li>
+                  <li data-i18n="hero.signs.items.item2">elfolyik az idő a kezed közül</li>
+                  <li data-i18n="hero.signs.items.item3">milliárd meg egy befejezetlen projekted van</li>
+                  <li data-i18n="hero.signs.items.item4">impulzív döntéseket hozol, amit utána egyből megbánsz</li>
+                </ul>
+              </div>
+              <div class="hero-signs-col">
+                <h3 data-i18n="hero.wishes.label">Szeretnéd, ha...</h3>
+                <ul>
+                  <li data-i18n="hero.wishes.items.item1">jobban értenéd a saját működésed</li>
+                  <li data-i18n="hero.wishes.items.item2">elfogadnád magad, ahogy éppen vagy</li>
+                  <li data-i18n="hero.wishes.items.item3">kevesebb szégyent éreznél</li>
+                  <li data-i18n="hero.wishes.items.item4">kevesebb nyitott projekt szívná az energiádat</li>
+                </ul>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://calendar.proton.me/bookings#1tXR9XYefLWZMWBQTz1pyXOQeJ2yAiuKtFz8vN4JGXw=" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaPrimary">Időpont foglalása</a>
+              <a class="button button-secondary" href="#credo" data-i18n="hero.ctaSecondary">Tudj meg többet</a>
+            </div>
+            <p class="button-note" data-i18n="hero.ctaNote">A foglalási oldal új lapon nyílik meg.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="credo" class="credo-section section-reveal">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label" data-i18n="credo.label">Hitvallás</span>
+            <h2 data-i18n="credo.title">Amiben hiszek, és miért fontos ez.</h2>
+          </div>
+          <p class="section-intro" data-i18n="credo.intro">
+            A coaching segít észrevenni, ami már jelen van, és könnyebbé teszi a tiszta, hiteles és magabiztos haladást.
+          </p>
+          <div class="pillar-grid">
+            <article class="pillar-card">
+              <span class="icon-chip icon-chip--form">
+                <svg class="pillar-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="17" stroke-width="1.6" />
+                  <path d="M24 7 A8.5 8.5 0 0 1 24 24 A8.5 8.5 0 0 0 24 41" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </span>
+              <h3 data-i18n="credo.pillars.form.title">Forma és kontextus</h3>
+              <p data-i18n="credo.pillars.form.body">
+                A Gestalt-pszichológiából merítve értékelem a figura és a háttér viszonyát — azt, ami kiemelkedik, és azt, ami támogatja.
+              </p>
+            </article>
+            <article class="pillar-card">
+              <span class="icon-chip icon-chip--skating">
+                <svg class="pillar-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 24 C14 16 22 16 24 24 C26 32 34 32 34 24 C34 16 26 16 24 24 C22 32 14 32 14 24 Z"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <h3 data-i18n="credo.pillars.skating.title">Korcsolyagyakorlat</h3>
+              <p data-i18n="credo.pillars.skating.body">
+                A műkorcsolya türelmet, ismétlést és kegyelmet tanít nyomás alatt — ugyanazok a minőségek, amelyek a coaching fejlődését is támogatják.
+              </p>
+            </article>
+            <article class="pillar-card">
+              <span class="icon-chip icon-chip--figuring">
+                <svg class="pillar-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 20 A6 6 0 1 1 30 20 C30 24 27 25 27 29 H21 C21 25 18 24 18 20 Z" stroke-width="1.6" stroke-linejoin="round" />
+                  <path d="M21 33 H27" stroke-width="1.6" stroke-linecap="round" />
+                  <path d="M22 37 H26" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </span>
+              <h3 data-i18n="credo.pillars.figuring.title">Ráérekezni</h3>
+              <p data-i18n="credo.pillars.figuring.body">
+                A coaching segít megérteni a bizonytalant, és előrelépéssé alakítani azt.
+              </p>
+            </article>
+            <article class="pillar-card">
+              <span class="icon-chip icon-chip--vision">
+                <svg class="pillar-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="16" stroke-width="1.6" />
+                  <circle cx="24" cy="24" r="8.5" stroke-width="1.6" />
+                  <circle cx="24" cy="24" r="2" fill="currentColor" stroke="none" />
+                </svg>
+              </span>
+              <h3 data-i18n="credo.pillars.vision.title">Vizualizáció</h3>
+              <p data-i18n="credo.pillars.vision.body">
+                Hiszek abban, hogy érdemes tiszta képet alkotni arról, mi tűnik lehetségesnek, majd azt kezelhető, értelmes lépésekre bontani.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="roots" class="roots-section section-reveal">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label" data-i18n="roots.label">Értékek</span>
+            <h2 data-i18n="roots.title">Ami megtart, még viharban is.</h2>
+          </div>
+          <p class="section-intro" data-i18n="roots.intro">
+            Három dolog, amihez mindig visszatérek — minden ügyféllel, a jégen, és abban is, ahogy megjelenek.
+          </p>
+          <div class="roots-grid">
+            <div class="tree-visual">
+            <div class="tree-figure-wrap">
+              <div class="tree-figure" role="img" aria-label="" data-i18n-aria="roots.illustrationAlt"></div>
+              <svg class="tree-markers" viewBox="0 0 1920 1920" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="632" cy="1700" r="16" fill="var(--gold)" />
+                <circle cx="955" cy="1792" r="16" fill="var(--gold)" />
+                <circle cx="1285" cy="1700" r="16" fill="var(--gold)" />
+              </svg>
+            </div>
+            </div>
+            <div class="root-list">
+            <article class="root-card">
+              <span class="icon-chip icon-chip--safe">
+                <svg class="pillar-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22 C12 32 18 39 24 39 C30 39 36 32 36 22" stroke-width="1.6" stroke-linecap="round" />
+                  <circle cx="24" cy="22" r="4" stroke-width="1.6" />
+                </svg>
+              </span>
+              <div class="root-card-text">
+                <h3 data-i18n="roots.values.safe.title">Biztonságos, elfogadó tér</h3>
+                <p data-i18n="roots.values.safe.body">
+                  Azt hozhatod, ami éppen igaz számodra — nem kell előtte megszűrnöd vagy megfelelned.
+                </p>
+              </div>
+            </article>
+            <article class="root-card">
+              <span class="icon-chip icon-chip--trust">
+                <svg class="pillar-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="19" cy="24" r="10" stroke-width="1.6" />
+                  <circle cx="29" cy="24" r="10" stroke-width="1.6" />
+                </svg>
+              </span>
+              <div class="root-card-text">
+                <h3 data-i18n="roots.values.trust.title">Bizalom és tisztelet a folyamat iránt</h3>
+                <p data-i18n="roots.values.trust.body">
+                  A fejlődés nem lineáris. Bízom abban, hogy a folyamat a maga tempójában bontakozik ki, és tisztelem, bárhol is tartasz benne.
+                </p>
+              </div>
+            </article>
+            <article class="root-card">
+              <span class="icon-chip icon-chip--together">
+                <svg class="pillar-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 14 V34" stroke-width="1.6" stroke-linecap="round" />
+                  <path d="M32 14 V34" stroke-width="1.6" stroke-linecap="round" />
+                  <path d="M16 34 C 16 38 32 38 32 34" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </span>
+              <div class="root-card-text">
+                <h3 data-i18n="roots.values.together.title">Veled, nem ellened</h3>
+                <p data-i18n="roots.values.together.body">
+                  Nem azért vagyok itt, hogy megjavítsalak vagy noszogassalak. A te oldaladon állok, veled együtt haladva afelé, amit szeretnél.
+                </p>
+              </div>
+            </article>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="me" class="me-section section-reveal">
+        <div class="container me-grid">
+          <div class="me-portrait">
+            <div class="portrait-frame">
+              <span data-i18n="me.photoPlaceholder">Fotó</span>
+            </div>
+          </div>
+          <div class="me-copy">
+            <div class="section-header">
+              <span class="section-label" data-i18n="me.label">Rólam</span>
+              <h2 data-i18n="me.title">Szia, Réka vagyok.</h2>
+            </div>
+            <p data-i18n="me.paragraph1">
+              Coachként egyéni ügyfeleket segítek magánéleti és munkahelyi témákban, a Gestalt eszköztárát használva. Amatőr, felnőtt versenyműkorcsolyázó és műkorcsolyaedző is vagyok — ezt a tapasztalatot is a coachingba hozom, és addig keresem a neked működő megközelítést, míg az üzenetem valóban át nem ér számodra.
+            </p>
+            <p data-i18n="me.paragraph2">
+              Az a célom, hogy segítsen jól látnod, megérteni és felszerelkezni a továbblépéshez kevesebb ellenállással és több könnyedséggel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section section-reveal">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label" data-i18n="about.label">A coachingról</span>
+            <h2 data-i18n="about.title">Mikor lehet a coaching jó megoldás.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p data-i18n="about.intro">
+                A coaching akkor segít, ha szeretnél:
+              </p>
+              <ul>
+                <li data-i18n="about.list.item1">tisztázni a következő lépést vagy irányt</li>
+                <li data-i18n="about.list.item2">megérteni egy ismétlődő mintát</li>
+                <li data-i18n="about.list.item3">új válaszadási módokat gyakorolni stresszre vagy változásra</li>
+                <li data-i18n="about.list.item4">harmóniát teremteni a céljaid és a mindennapi életed között</li>
+              </ul>
+              <p data-i18n="about.paragraph">
+                Együtt feltérképezhetjük az erősségeidet, tisztább képet alkothatunk arról, mi számít, és gyakorlatias szokásokat tervezhetünk, amelyek fenntarthatók.
+              </p>
+              <a class="button button-primary" href="https://calendar.proton.me/bookings#1tXR9XYefLWZMWBQTz1pyXOQeJ2yAiuKtFz8vN4JGXw=" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaPrimary">Időpont foglalása</a>
+            </div>
+            <div class="about-features">
+              <div class="feature-card">
+                <h3 data-i18n="about.features.guidance.title">Gondos irányítás</h3>
+                <p data-i18n="about.features.guidance.body">
+                  Coaching beszélgetés, ami segít abban, hogy lássanak és támogassanak, miközben kibogozod a dolgokat.
+                </p>
+              </div>
+              <div class="feature-card">
+                <h3 data-i18n="about.features.practice.title">Gyakorlati munka</h3>
+                <p data-i18n="about.features.practice.body">
+                  Kicsi, reális következő lépések, amelyek lendületet adnak és előre visznek.
+                </p>
+              </div>
+              <div class="feature-card">
+                <h3 data-i18n="about.features.clarity.title">Vizualis tisztaság</h3>
+                <p data-i18n="about.features.clarity.body">
+                  Tisztabb kép arról, hogyan néz ki a siker számodra, teret hagyva az igazításhoz, miközben fejlődsz.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p data-i18n="footer.tagline">Figure Coaching — nyugodt, kiegyensúlyozott és megtapasztaló támogatás.</p>
+        <p><a href="mailto:hello@example.com" data-i18n="footer.email">hello@example.com</a></p>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
