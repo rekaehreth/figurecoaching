@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Figure Coaching — Coming Soon</title>
+    <title>Figure Coaching — Hamarosan</title>
     <meta
       name="description"
-      content="Figure Coaching's website is on its way. Reach out at info@figurecoaching.hu."
+      content="A Figure Coaching honlapja még nem öltött teljesen alakot. Keress bátran: reka@figurecoaching.hu"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,7 +45,7 @@
       }
 
       main {
-        max-width: 440px;
+        max-width: 620px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -85,24 +85,14 @@
         }
       }
 
-      .eyebrow {
-        margin: 0 0 14px;
-        font-size: 0.8rem;
-        font-weight: 500;
-        letter-spacing: 0.16em;
-        text-transform: lowercase;
-        color: var(--gold-deep);
-        animation-delay: 2.5s;
-      }
-
       h1 {
         margin: 0 0 18px;
         font-family: "Fraunces", Georgia, "Iowan Old Style", serif;
         font-weight: 600;
-        font-size: clamp(1.9rem, 5vw, 2.6rem);
+        font-size: clamp(1.9rem, 8vw, 2.6rem);
         line-height: 1.25;
         color: var(--pine-900);
-        animation-delay: 2.65s;
+        animation-delay: 0.5s;
       }
 
       h1 em {
@@ -116,7 +106,14 @@
         font-size: 1.05rem;
         line-height: 1.6;
         color: var(--pine);
-        animation-delay: 2.85s;
+      }
+
+      p:first-of-type {
+        animation-delay: 0.3s;
+      }
+
+      p:last-of-type {
+        animation-delay: 0.7s;
       }
 
       a {
@@ -132,7 +129,6 @@
         background-repeat: no-repeat;
         background-position: 0 100%;
         transition: background-size 0.25s ease, color 0.25s ease;
-        animation-delay: 3s;
       }
 
       a:hover,
@@ -169,10 +165,9 @@
         <defs></defs>
       </svg>
 
-      <p class="eyebrow reveal">figure coaching</p>
-      <h1 class="reveal">Still finding its <em>shape</em>.</h1>
-      <p class="reveal">The new site is on its way. Say hello any time —</p>
-      <a class="reveal" href="mailto:info@figurecoaching.hu">info@figurecoaching.hu</a>
+      <p class="reveal">A Figure Coaching</p>
+      <h1 class="reveal">Még nem öltött teljesen&nbsp;<em>alakot</em>.</h1>
+      <p class="reveal">Amíg elkészül a weboldal, keress bátran a <a href="mailto:reka@figurecoaching.hu">reka@figurecoaching.hu</a> címen.</p>
     </main>
 
     <script>
