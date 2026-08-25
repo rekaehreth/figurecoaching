@@ -76,6 +76,7 @@
         opacity: 0;
         transform: translateY(10px);
         animation: fadeUp 0.7s ease forwards;
+        animation-delay: var(--delay);
       }
 
       @keyframes fadeUp {
@@ -85,6 +86,18 @@
         }
       }
 
+      .lead-in {
+        --delay: 0.3s;
+      }
+
+      .headline {
+        --delay: 0.5s;
+      }
+
+      .contact-line {
+        --delay: 0.7s;
+      }
+
       h1 {
         margin: 0 0 18px;
         font-family: "Fraunces", Georgia, "Iowan Old Style", serif;
@@ -92,7 +105,6 @@
         font-size: clamp(1.9rem, 8vw, 2.6rem);
         line-height: 1.25;
         color: var(--pine-900);
-        animation-delay: 0.5s;
       }
 
       h1 em {
@@ -106,14 +118,6 @@
         font-size: 1.05rem;
         line-height: 1.6;
         color: var(--pine);
-      }
-
-      p:first-of-type {
-        animation-delay: 0.3s;
-      }
-
-      p:last-of-type {
-        animation-delay: 0.7s;
       }
 
       a {
@@ -161,16 +165,16 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g class="stroke-mark"></g>
+        <g data-mark-group></g>
         <defs></defs>
       </svg>
 
-      <p class="reveal">A Figure Coaching</p>
-      <h1 class="reveal">Még nem öltött teljesen&nbsp;<em>alakot</em>.</h1>
-      <p class="reveal">Amíg elkészül a weboldal, keress bátran a <a href="mailto:reka@figurecoaching.hu">reka@figurecoaching.hu</a> címen.</p>
+      <p class="reveal lead-in">A Figure Coaching</p>
+      <h1 class="reveal headline">Még nem öltött teljesen&nbsp;<em>alakot</em>.</h1>
+      <p class="reveal contact-line">Amíg elkészül a weboldal, keress bátran a <a href="mailto:reka@figurecoaching.hu">reka@figurecoaching.hu</a> címen.</p>
     </main>
 
-    <script>
+    <script type="module">
       const SVG_NS = "http://www.w3.org/2000/svg";
       const SOURCE_MARK_URL = "assets/logo_v1_color_gradient_v2_export.svg";
       const GRADIENT_ID_RIGHT = "trace-grad-right";
@@ -181,7 +185,7 @@
 
       async function initMark() {
         const svg = document.querySelector(".mark");
-        const group = svg.querySelector(".stroke-mark");
+        const group = svg.querySelector("[data-mark-group]");
         const defs = svg.querySelector("defs");
 
         try {
