@@ -26,3 +26,7 @@ Then visit `http://localhost:8000`.
 - Update booking links to your Proton booking page
 - Add a real photo or illustration in the ME section
 - Configure GitHub Pages and a custom domain when ready
+
+## Rights
+
+© Figure Coaching. All rights reserved. This repository is public for GitHub Pages hosting only — no license is granted to copy, modify, or redistribute its content.
